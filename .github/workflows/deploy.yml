@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: 'print hello'
-        users: actions/hello-world-javascript-action@main
+        uses: actions/hello-world-javascript-action@main
         with:
           who-to-greet: 'Mona the Octocat'
 
