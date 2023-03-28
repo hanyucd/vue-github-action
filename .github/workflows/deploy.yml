@@ -8,15 +8,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      # 使用别人封装好的的action，用于clone该仓库的源码到工作流中
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: 'print hello'
+        users: actions/hello-world-javascript-action@main
+        with:
+          who-to-greet: 'Mona the Octocat'
 
-      # - name: Run a multi-line script
-      #   run: |
-      #     echo Add other actions to build,
-      #     echo test, and deploy your project.
