@@ -1,5 +1,4 @@
-# 当前工作流程的名称
-name: Auto Deploy
+name: learn github actions
 
 on:
   push:
